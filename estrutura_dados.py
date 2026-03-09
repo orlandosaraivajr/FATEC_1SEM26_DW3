@@ -29,3 +29,35 @@ tupla1 = tuple(lista)
 print(type(tupla1))
 
 # https://leetcode.com/problems/merge-two-sorted-lists/description/
+
+
+'''
+09 de março
+Desafio: remover elementos duplicados
+'''
+lista = list(range(1,10))
+lista = lista + list(range(5,15))
+lista = lista + list(range(10,35))
+print(lista)
+
+# Primeira versão
+lista2 = []
+for elemento in lista:
+    if elemento not in lista2:
+        lista2.append(elemento)
+
+# Segunda versão
+
+lista3 = list(set(lista))
+
+conjunto1 = set([1,2,3,4,5,6,7])
+conjunto2 = set([5,6,7,8,9,10])
+
+# Dicionário
+
+a = dict(one=1, two=2, three=3)
+b = {'one': 1, 'two': 2, 'three': 3}
+c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
+d = dict([('two', 2), ('one', 1), ('three', 3)])
+e = dict({'three': 3, 'one': 1, 'two': 2})
+f = dict({'one': 1, 'three': 3}, two=2)
