@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import FeriadoModel
 
-# Register your models here.
+admin.site.register(FeriadoModel)
+

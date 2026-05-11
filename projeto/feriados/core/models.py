@@ -8,3 +8,9 @@ class FeriadoModel(models.Model):
 
     def __str__(self):
         return self.nome
+    
+    class Meta:
+        db_table = ''
+        managed = True
+        verbose_name = 'Feriado'
+        verbose_name_plural = 'Feriados'
