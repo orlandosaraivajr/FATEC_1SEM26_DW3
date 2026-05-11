@@ -14,3 +14,4 @@ class FeriadoModel(models.Model):
         managed = True
         verbose_name = 'Feriado'
         verbose_name_plural = 'Feriados'
+        ordering = ('mes', '-dia')
